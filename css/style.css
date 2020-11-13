@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+*{
+    background-color:aliceblue;
+    font-family: "맑은고딕";
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body,html{
+    min-width: 960px;
+}
+
+.all{
+    width: 100%;
+    float: left;
+}
+
+.wrap{
+    width: 960px;
+}
+
+.clear{
+    clear: both;
+    position: inherit;
+}
+
+header{
+    height: 150px;
+}
+
+#header_div{
+    padding-top: 10px;
+}
+
+.logo{
+    height: 100px;
+    overflow: hidden;
+    float: left;
+}
+
+.logo>a>img{
+    width: 250px;
+    margin-top: -50px;
+}
+
+nav{
+    float: right;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.nav{
+    width: 600px;
+    height: 20px;
+}
+
+.nav>li{
+    float: left;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    transition:all 0.4s;
+    padding: 5px 0;
+}
+
+.nav>li:hover{
+    background-color: #4298cc;
+    color: black;
+}
+
+.submenu{
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.submenu>li{
+    padding: 5px 0;
+    transition: all 0.4s;
+    color: #000
+}
+
+.submenu>li:hover{
+    background-color: #00CCFF;
+    color:inherit
+}
+
+#imgslide{
+    margin-top: 10px;
+    height: 400px;
+}
+
+.imgs{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 960px;
+    background-color: #000;
+}
+
+.imgs>img{
+    width: 100%;
+    position: absolute;
+    transition: all 2s;
+}
+
+.welcome{
+    position: relative;
+    margin: -50px 0 0 -300px !important;
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #CCCCCC;
+    border-radius: 30px;
+    left: 50%;
+    top: 55%;
+}
+
+span{
+    color: #893700;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #999999;
+}
+
+#contents{
+    height: 500px;
+}
+
+.notice{
+    width: 480px;
+    margin-top: 20px;
+    float: left;
+}
+
+.notice h2{
+    text-align: center;
+}
+
+.table{
+    border-collapse: collapse; /*태두리 제거*/
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.table tr>th{
+    padding: 5px 0;
+}
+
+.table tr>td{
+    padding: 5px;
+}
+
+.table tr:nth-child(2n){
+    background-color: rgba(153, 153, 153, 0.5);
+}
+
+.partner{
+    float: right;
+    width: 480px;
+    margin-top: 20px;
+}
+
+.partner h2{
+    text-align: center;
+}
+
+.partner_info{
+    margin-top: 30px;
+}
+
+footer{
+    height: 150px;
+    background-color: #4298cc;
+    width: 960px;
+    color: #ffffff;
+    overflow: hidden;
+}
