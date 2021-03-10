@@ -5,4 +5,4 @@ GodVas.github.io
 [Click](GodVas.github.io/athena)
 
 # SchoolSite
-[Click](GodVas.github.io/schoolSite)
+[Click](https://GodVas.github.io/schoolSite)
