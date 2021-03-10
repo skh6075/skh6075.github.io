@@ -2,7 +2,7 @@
 GodVas.github.io
 
 # Athena Site
-[Click](GodVas.github.io/athena)
+[Click](https://GodVas.github.io/athena)
 
 # SchoolSite
 [Click](https://GodVas.github.io/schoolSite)
