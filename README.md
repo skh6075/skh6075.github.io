@@ -6,3 +6,6 @@ GodVas.github.io
 
 # SchoolSite
 [Click](https://GodVas.github.io/schoolSite)
+
+# Assignments
+[Click](https://GodVas.github.io/assignment)
