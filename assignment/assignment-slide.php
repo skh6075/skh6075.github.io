@@ -4,6 +4,21 @@
 Template Name: assignment-slide
  */
 
+//put function.php file
+
+if(!function_exists('onStartSlideShow')){
+	function onStartSlideShow($atts) : string{
+		$atts = shortcode_atts(array(
+			'do' => false,
+			'slides' => 0
+		), $atts, 'call-show');
+		return json_encode($atts);
+	}
+	add_shortcode('call-show', 'onStartSlideShow');
+}
+
+/////////////////////////////////////////////////////////////
+
 $get = do_shortcode('[call-show do="true" slides="4"]');
 $atts = json_decode($get, true);
 
