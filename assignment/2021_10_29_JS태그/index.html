@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>2021_10_29 JS 태그생성 과제</title>
+		<style>
+            label {
+                display: block;
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+
+            input, label {
+                margin: .4rem 0;
+            }
+		</style>
+	</head>
+	<body>
+		<label for="name">2021_10_29 JS 태그생성 과제</label><input id="name" onkeyup="printResult()">
+		<div id="result"></div>
+		<script>
+			function printResult() {
+				const input = document.getElementById('name').value;
+				const textArr = input.split(',');
+				const length = textArr.length - 1; //default Value => 1
+				if (length > 0) {
+					let dump = '';
+					textArr.forEach((value, index, array) => {
+						value = "#" + value;
+						dump += '<input type="button" id="btn" value="' + value + '"/>';
+					});
+					document.getElementById('result').innerHTML = dump;
+				} else {
+					document.getElementById('result').innerHTML = '<input type="button" id="btn" value="#' + input + '"/>';
+				}
+			}
+		</script>
+	</body>
+</html>
