@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>2021_10_29 JS 태그생성 과제</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<style>
+            label {
+                display: block;
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+
+            input, label {
+                margin: .4rem 0;
+            }
+		</style>
+
+		<script>
+			$(function () {
+				$("#focus").on("focusout", function (event) {
+					const input = document.getElementById('focus').value;
+					const textArr = input.split(',');
+					const length = textArr.length - 1; //default Value => 1
+					if (length > 0) {
+						let dump = '';
+						textArr.forEach((value, index, array) => {
+							dump += '<span style="background-color: rgb(234, 234, 234)">#' + value.trim() + '</span> ';
+						});
+						document.getElementById('result').innerHTML = dump;
+					} else if (input.length !== 0) {
+						document.getElementById('result').innerHTML = '<span style="background-color: rgb(234, 234, 234)">#' + input.trim() + '</span>';
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" id="focus" class="hidden">
+
+		<div id="result"></div>
+	</body>
+</html>
