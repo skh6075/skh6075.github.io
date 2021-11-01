@@ -25,12 +25,11 @@
 				if (length > 0) {
 					let dump = '';
 					textArr.forEach((value, index, array) => {
-						value = "#" + value;
-						dump += '<input type="button" id="btn" value="' + value + '"/>';
+						dump += '<span style="background-color: rgb(234, 234, 234)">#'+value+'</span> ';
 					});
 					document.getElementById('result').innerHTML = dump;
 				} else {
-					document.getElementById('result').innerHTML = '<input type="button" id="btn" value="#' + input + '"/>';
+					document.getElementById('result').innerHTML = '<span style="background-color: rgb(234, 234, 234)">#' + input + '</span>';
 				}
 			}
 		</script>
