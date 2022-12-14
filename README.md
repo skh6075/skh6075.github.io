@@ -1,11 +1,8 @@
-# GodVas.github.io
-GodVas.github.io
-
 # Athena Site
-[Click](https://GodVas.github.io/athena)
+[Click](https://skh6075.github.io/athena)
 
 # SchoolSite
-[Click](https://GodVas.github.io/schoolSite)
+[Click](https://skh6075.github.io/schoolSite)
 
 # Assignments
-[Click](https://GodVas.github.io/assignment)
+[Click](https://skh6075.github.io/assignment)
